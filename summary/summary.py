@@ -89,6 +89,9 @@ def run_plugin(generators):
         elif isinstance(generator, PagesGenerator):
             for page in generator.pages:
                 extract_summary(page)
+        elif hasattr(generator, "entities"):
+            for entity in generator.entities:
+                extract_summary(entity)
 
 
 def register():
