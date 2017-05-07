@@ -74,6 +74,8 @@ Custom article URLs       Adds support for defining different default URLs for d
 
 Dateish                   Treat arbitrary metadata fields as datetime objects
 
+Dead Links                Manage dead links (website not available, errors such as 403, 404)
+
 Disqus static comments    Adds a disqus_comments property to all articles. Comments are fetched at generation time using disqus API
 
 Encrypt content           Password protect pages and articles
@@ -88,6 +90,8 @@ Figure References         Provides a system to number and references figures
 
 Filetime from Git         Uses Git commit to determine page date
 
+Filetime from Hg          Uses Mercurial commit to determine page date
+
 Footer Insert             Add standardized footer (e.g., author information) at end of every article
 
 GA Page View              Display Google Analytics page views on individual articles and pages
@@ -99,6 +103,8 @@ Gist directive            This plugin adds a ``gist`` reStructuredText directive
 GitHub activity           On the template side, you just have to iterate over the ``github_activity`` variable
 
 Global license            Allows you to define a ``LICENSE`` setting and adds the contents of that license variable to the article's context
+
+Glossary                  Adds a variable containing definitions extracted from definition lists in articles and pages. This variable is visible to all page templates.
 
 Goodreads activity        Lists books from your Goodreads shelves
 
@@ -121,6 +127,8 @@ ical                      Looks for and parses an ``.ics`` file if it is defined
 Image Process             Automates the processing of images based on their class attributes
 
 Interlinks                Lets you add frequently used URLs to your markup using short keywords
+
+Jinja2 Content            Allows the use of Jinja2 template code in articles, including ``include`` and ``import`` statements. Replacement for pelican-jinja2content.
 
 Just table                Easily create tables in articles
 
@@ -194,6 +202,8 @@ pelicanfly                Lets you type things like ``i ♥ :fa-coffee:`` in you
 
 Photos                    Add a photo or a gallery of photos to an article, or include photos in the body text. Resize photos as needed.
 
+permalink                 Enables a kind of permalink using html redirects.
+
 Pin to top                Pin Pelican's article(s) to top "Sticky article"
 
 PlantUML                  Allows you to define UML diagrams directly into rst documents using the great PlantUML tool
@@ -221,6 +231,8 @@ Section number            Adds section numbers for article headers, in the form 
 Series                    Groups related articles into a series
 
 Share post                Creates share URLs of article
+
+Show Source               Place a link to the source text of your posts.
 
 Simple footnotes          Adds footnotes to blog posts
 
